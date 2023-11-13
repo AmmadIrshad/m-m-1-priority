@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Queue Simulation App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>M/M/1 Priority Simulation</h1>
+      <label for="arrivalMean">Enter Arrival Mean:</label>
+      <input
+        type="number"
+        id="arrivalMean"
+        step="any"
+        placeholder="Enter arrival mean"
+      />
+
+      <label for="serviceMean">Enter Service Mean:</label>
+      <input
+        type="number"
+        id="serviceMean"
+        step="any"
+        placeholder="Enter service mean"
+      />
+
+      <button onclick="generatePatientData()">Generate Data</button>
+
+      <table id="outputTable">
+        <!-- Output table will be populated by JavaScript -->
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
